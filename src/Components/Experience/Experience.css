@@ -1,0 +1,60 @@
+.experience-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+  }
+  
+  .experience-section h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  
+  .table-container {
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  
+  .experience-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    background: transparent;
+  }
+  
+  .experience-table td {
+    padding: 1rem;
+    font-weight: 500;
+    vertical-align: middle;
+    background-color: #010208;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .experience-table td:first-child {
+    text-align: left;
+    color: #f5f5f5;
+  }
+  
+  .experience-table td:last-child {
+    text-align: right;
+    color: #999;
+  }
+  
+  .experience-table tr:hover td {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .experience-table td {
+      font-size: 0.9rem;
+      padding: 0.75rem;
+    }
+  
+    .experience-section h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

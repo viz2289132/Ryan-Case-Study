@@ -1,0 +1,67 @@
+nav {
+    width: 100%;
+    color: #fff;
+    padding: 8px 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    background: black; /* ensure background for fixed nav */
+    flex-wrap: wrap; /* allow wrapping on small screens */
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    list-style: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn {
+    padding: 6px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 2px solid white;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+    background: transparent;
+    color: white;
+  }
+  
+  .btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Responsive navbar */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 1rem;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    nav ul li {
+      margin: 8px 0;
+    }
+  
+    .btn {
+      margin-top: 10px;
+      align-self: flex-start;
+    }
+  }
+  

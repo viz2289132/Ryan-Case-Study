@@ -1,0 +1,114 @@
+.testimonial-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    color: white;
+  }
+  
+  .testimonial-section h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  .testimonial-box {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1.25rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+  }
+  
+  .testimonial-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .testimonial-user img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .testimonial-user strong {
+    font-weight: 600;
+    color: white;
+  }
+  
+  .company {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin: 0;
+  }
+  
+  .testimonial-message {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #ddd;
+  }
+  
+  .testimonial-message svg {
+    color: #999;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+  }
+  
+  .testimonial-controls {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .testimonial-controls button {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgb(158, 65, 65);
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .testimonial-controls button:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Responsive tweaks */
+  @media (min-width: 768px) {
+    .testimonial-box {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .testimonial-message {
+      font-size: 1.5rem;
+      flex: 1;
+      margin: 0 1rem;
+    }
+  
+    .testimonial-controls {
+      gap: 0.75rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-message {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .testimonial-controls {
+      justify-content: center;
+    }
+  }
+  
